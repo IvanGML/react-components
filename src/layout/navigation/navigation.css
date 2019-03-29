@@ -1,42 +1,94 @@
+:root {
+  --toggler-width: 120px;
+  --toggler-height: 0;
+  --toggler-bg-color: #ffbf00;
+  --toggler-active-bg-color: #ffcf40;
+  --menu-starting-top: 0px;
+  --menu-ending-top: 45px;
+  --menu-width: 200px;
+  --menu-max-height: 200px;
+  --menu-bg-color: #ffdc73;
+  --fade-from-color: transparent;
+  --fade-to-color: black;
+  --timeout: 350ms;
+}
+
 .logoWrapper {
-    text-align: center;
-  }
-  
-  .navigation {
-    background-color: #22a128;
-    box-shadow: 1px 1px 10px #777;
-  }
-  
-  .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .nav li {
-    display: flex;
-    align-items: center;
-    flex: 1 0 100%;
-  }
-  
-  .nav a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 15px 0 15px 30px;
-    box-sizing: border-box;
-    border-left: 3px solid transparent;
-    font-weight: 600;
-  }
-  
-  .nav a:hover,
-  .nav a.active {
-    background-color: rgba(0,0,0,.2);
-    border-color: #EBEBEB;
-  }
+  text-align: center;
+}
+
+.navigation {
+  background-color: #22a128;
+  box-shadow: 1px 1px 10px #777;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  flex: 1 0 100%;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0 15px 30px;
+  box-sizing: border-box;
+  border-left: 3px solid transparent;
+  font-weight: 600;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: rgba(0, 0, 0, .2);
+  border-color: #EBEBEB;
+}
+
+.menu-enter,
+.menu-appear {
+  top: var(--menu-starting-top);
+  max-height: var(--toggler-height);
+  color: var(--fade-from-color);
+  z-index: 3;
+}
+
+.menu-enter-active,
+.menu-appear-active {
+  top: var(--menu-ending-top);
+  max-height: var(--menu-max-height);
+  color: var(--fade-to-color);
+  transition: all var(--timeout);
+  overflow: hidden;
+}
+
+.menu-exit {
+  top: var(--menu-ending-top);
+  max-height: var(--menu-max-height);
+  color: var(--fade-to-color);
+}
+
+.menu-exit-active {
+  top: var(--menu-starting-top);
+  max-height: var(--toggler-height);
+  color: var(--fade-from-color);
+  transition: all var(--timeout);
+  overflow: hidden;
+}

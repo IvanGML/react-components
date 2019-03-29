@@ -1,4 +1,9 @@
 .main {
-    padding: 25px 50px;
-    position: relative;
-  }
+  padding: 25px 50px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.main h1 {
+  text-align: center;
+}
