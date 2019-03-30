@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import App from './App';
-import Button from './components/button/Button';
+import Button from './components/button/ButtonSandbox';
 import ButtonGroup from './components/buttonGroup/ButtonGroupSandbox';
 import * as serviceWorker from './serviceWorker';
 
