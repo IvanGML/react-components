@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import './home.css';
+import { NavLink } from "react-router-dom";
+
+const RouterLink = props => <NavLink {...props} className="list-link" />;
 
 const Home = () => (
-    <h1>Home page</h1>
+    <Fragment>
+        <h1>Home page</h1>
+        <ul className='list'>
+            <li className='list-item'>
+                <RouterLink to='/'>home</RouterLink>
+            </li>
+            <li className='list-item'>
+                <RouterLink to='/button'>button</RouterLink>
+            </li>
+        </ul>
+    </Fragment>
+
 );
 
 export default Home;

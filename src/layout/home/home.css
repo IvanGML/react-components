@@ -1,0 +1,24 @@
+.list {
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.list-link {
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #333333;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.list-link:hover {
+    background-color: #22a128;
+    color: #ffffff;
+}
