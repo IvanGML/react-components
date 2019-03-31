@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
+import './buttonGroup.css';
 
 const ButtonGroup = ({ children, vertical, className, ...attrs }) => {
     const classes = cx(

@@ -21,4 +21,5 @@
 .list-link:hover {
     background-color: #22a128;
     color: #ffffff;
+    box-shadow: 1px 1px 10px #777;
 }
