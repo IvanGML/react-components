@@ -5,8 +5,9 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Navigation from './layout/navigation/Navigation';
 import App from './App';
-import Button from './components/button/ButtonSandbox';
-import ButtonGroup from './components/buttonGroup/ButtonGroupSandbox';
+import ButtonSandbox from './components/button/ButtonSandbox';
+import ButtonGroupSandbox from './components/buttonGroup/ButtonGroupSandbox';
+import IconSandbox from './components/icon/IconSandbox';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './layout/home/Home';
@@ -25,8 +26,9 @@ const AppWithTransition = props => {
             <App>
               <Switch location={props.location}>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/button" component={Button} />
-                <Route exact path="/group-button" component={ButtonGroup} />
+                <Route exact path="/button" component={ButtonSandbox} />
+                <Route exact path="/group-button" component={ButtonGroupSandbox} />
+                <Route exact path="/icon" component={IconSandbox} />
                 <Redirect to="/" />
               </Switch>
             </App>

@@ -18,7 +18,7 @@ const Button = ({ children, onClick, active, disabled, className, ...attrs }) =>
     }
     const Tag = attrs.href ? 'a' : 'button';
     return (
-        <Tag 
+        <Tag
             className={classes}
             disabled={disabled}
             onClick={onClickAction}
@@ -29,7 +29,10 @@ const Button = ({ children, onClick, active, disabled, className, ...attrs }) =>
 };
 
 Button.propTypes = {
-    children: PropTypes.string,
+    children: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node,
+    ]),
     onClick: PropTypes.func,
     active: PropTypes.bool,
     disabled: PropTypes.bool,

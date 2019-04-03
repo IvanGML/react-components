@@ -32,6 +32,7 @@ class Navigation extends Component {
                 <li><NavLink onClick={this.toggleMenu} exact to="/">Home</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/button">Button</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/group-button">Button group</NavLink></li>
+                <li><NavLink onClick={this.toggleMenu} to="/icon">Button group</NavLink></li>
               </ul>
             </nav>
           </CSSTransition>
