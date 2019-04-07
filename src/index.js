@@ -8,6 +8,7 @@ import App from './App';
 import ButtonSandbox from './components/button/ButtonSandbox';
 import ButtonGroupSandbox from './components/buttonGroup/ButtonGroupSandbox';
 import IconSandbox from './components/icon/IconSandbox';
+import ImageSandbox from './components/image/ImageSandbox';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './layout/home/Home';
@@ -29,7 +30,9 @@ const AppWithTransition = props => {
                 <Route exact path="/button" component={ButtonSandbox} />
                 <Route exact path="/group-button" component={ButtonGroupSandbox} />
                 <Route exact path="/icon" component={IconSandbox} />
-                <Redirect to="/" />
+                <Route exact path="/image" component={ImageSandbox} />
+                {/* <Redirect to="/" />   */} 
+                {/* redirect make infinty loop. should be fixed */}
               </Switch>
             </App>
           </div>
