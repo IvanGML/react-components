@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Navigation from './layout/navigation/Navigation';
 import App from './App';
@@ -9,6 +9,7 @@ import ButtonSandbox from './components/button/ButtonSandbox';
 import ButtonGroupSandbox from './components/buttonGroup/ButtonGroupSandbox';
 import IconSandbox from './components/icon/IconSandbox';
 import ImageSandbox from './components/image/ImageSandbox';
+import ChipSandbox from './components/chip/ChipSandbox';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './layout/home/Home';
@@ -31,6 +32,7 @@ const AppWithTransition = props => {
                 <Route exact path="/group-button" component={ButtonGroupSandbox} />
                 <Route exact path="/icon" component={IconSandbox} />
                 <Route exact path="/image" component={ImageSandbox} />
+                <Route exact path="/chip" component={ChipSandbox} />
                 {/* <Redirect to="/" />   */} 
                 {/* redirect make infinty loop. should be fixed */}
               </Switch>

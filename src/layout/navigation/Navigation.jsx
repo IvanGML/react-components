@@ -34,6 +34,7 @@ class Navigation extends Component {
                 <li><NavLink onClick={this.toggleMenu} to="/group-button">Button group</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/icon">Icon</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/image">Image</NavLink></li>
+                <li><NavLink onClick={this.toggleMenu} to="/chip">Chip</NavLink></li>
               </ul>
             </nav>
           </CSSTransition>
