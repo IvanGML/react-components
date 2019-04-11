@@ -7,7 +7,7 @@
   --menu-ending-top: 45px;
   --menu-width: 200px;
   /* TODO: change fix height to dynamic*/
-  --menu-max-height: 350px;
+  --menu-max-height: 400px;
   --menu-bg-color: #ffdc73;
   --fade-from-color: transparent;
   --fade-to-color: black;

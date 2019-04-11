@@ -11,6 +11,7 @@ import IconSandbox from './components/icon/IconSandbox';
 import ImageSandbox from './components/image/ImageSandbox';
 import ChipSandbox from './components/chip/ChipSandbox';
 import BadgeSandbox from './components/badge/BadgeSandbox';
+import ListGroupSandbox from './components/listGroup/ListGroupSandbox';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './layout/home/Home';
@@ -35,6 +36,7 @@ const AppWithTransition = props => {
                 <Route exact path="/image" component={ImageSandbox} />
                 <Route exact path="/chip" component={ChipSandbox} />
                 <Route exact path="/badge" component={BadgeSandbox} />
+                <Route exact path="/listGroup" component={ListGroupSandbox} />
                 {/* <Redirect to="/" />   */} 
                 {/* TODO: redirect make infinty loop. should be fixed */}
               </Switch>

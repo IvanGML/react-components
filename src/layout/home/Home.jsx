@@ -29,6 +29,9 @@ const Home = () => (
             <li className='list-item'>
                 <RouterLink to='/badge'>Badge</RouterLink>
             </li>
+            <li className='list-item'>
+                <RouterLink to='/listGroup'>List group</RouterLink>
+            </li>
         </ul>
     </Fragment>
 
