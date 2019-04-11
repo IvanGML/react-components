@@ -26,6 +26,9 @@ const Home = () => (
             <li className='list-item'>
                 <RouterLink to='/chip'>chip</RouterLink>
             </li>
+            <li className='list-item'>
+                <RouterLink to='/badge'>Badge</RouterLink>
+            </li>
         </ul>
     </Fragment>
 
