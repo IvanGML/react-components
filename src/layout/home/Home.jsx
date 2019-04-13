@@ -35,6 +35,9 @@ const Home = () => (
             <li className='list-item'>
                 <RouterLink to='/input'>Input</RouterLink>
             </li>
+            <li className='list-item'>
+                <RouterLink to='/tabBar'>TabBar</RouterLink>
+            </li>
         </ul>
     </Fragment>
 

@@ -38,6 +38,7 @@ class Navigation extends Component {
                 <li><NavLink onClick={this.toggleMenu} to="/badge">Badge</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/listGroup">List group</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/input">Input</NavLink></li>
+                <li><NavLink onClick={this.toggleMenu} to="/tabBar">TabBar</NavLink></li>
               </ul>
             </nav>
           </CSSTransition>
