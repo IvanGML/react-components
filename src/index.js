@@ -14,6 +14,7 @@ import BadgeSandbox from './components/badge/BadgeSandbox';
 import ListGroupSandbox from './components/listGroup/ListGroupSandbox';
 import InputSandbox from './components/input/InputSandbox';
 import TabBarSandbox from './components/tabs/TabBarSandbox';
+import TooltipSandbox from './components/tooltip/TooltipSandbox';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './layout/home/Home';
@@ -41,6 +42,7 @@ const AppWithTransition = props => {
                 <Route exact path="/listGroup" component={ListGroupSandbox} />
                 <Route exact path="/input" component={InputSandbox} />
                 <Route exact path="/tabBar" component={TabBarSandbox} />
+                <Route exact path="/tooltip" component={TooltipSandbox} />
                 {/* <Redirect to="/" />   */} 
                 {/* TODO: redirect make infinty loop. should be fixed */}
               </Switch>

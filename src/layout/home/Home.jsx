@@ -38,6 +38,9 @@ const Home = () => (
             <li className='list-item'>
                 <RouterLink to='/tabBar'>TabBar</RouterLink>
             </li>
+            <li className='list-item'>
+                <RouterLink to='/tooltip'>Tooltip</RouterLink>
+            </li>
         </ul>
     </Fragment>
 
