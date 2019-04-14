@@ -41,6 +41,9 @@ const Home = () => (
             <li className='list-item'>
                 <RouterLink to='/tooltip'>Tooltip</RouterLink>
             </li>
+            <li className='list-item'>
+                <RouterLink to='/modal'>Modal window</RouterLink>
+            </li>
         </ul>
     </Fragment>
 

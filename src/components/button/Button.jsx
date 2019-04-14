@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import './button.css';
 
-const Button = ({ children, onClick, active, disabled, className, ...attrs }) => {
+const Button = ({ children, onClick, active, disabled, className, invert, ...attrs }) => {
     const classes = cx(
         'btn',
         { active },
+        { invert },
         className,
     )
     const onClickAction = e => {
@@ -37,6 +38,7 @@ Button.propTypes = {
     active: PropTypes.bool,
     disabled: PropTypes.bool,
     className: PropTypes.string,
+    invert: PropTypes.bool,
 };
 Button.defaultProps = {
     children: 'Button',
@@ -44,6 +46,7 @@ Button.defaultProps = {
     active: false,
     disabled: false,
     className: '',
+    invert: false,
 };
 
 export default Button;

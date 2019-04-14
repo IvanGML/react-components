@@ -40,6 +40,7 @@ class Navigation extends Component {
                 <li><NavLink onClick={this.toggleMenu} to="/input">Input</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/tabBar">TabBar</NavLink></li>
                 <li><NavLink onClick={this.toggleMenu} to="/tooltip">Tooltip</NavLink></li>
+                <li><NavLink onClick={this.toggleMenu} to='/modal'>Modal window</NavLink></li>
               </ul>
             </nav>
           </CSSTransition>
